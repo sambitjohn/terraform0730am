@@ -32,7 +32,7 @@ module "db" {
 
   # DB subnet group
 
-    subnet_ids=[data.aws_subnet.subnet-1, data.aws_subnet.subnet-2]
+    subnet_ids=[data.aws_subnet.subnet-1.id, data.aws_subnet.subnet-2.id]
 
   # DB parameter group
   family = "mysql5.7"
